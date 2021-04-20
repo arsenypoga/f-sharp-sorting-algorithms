@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "kXYJE5f5WIncB2AFITFulfRzYx/PCiNPc9ZKLEPPsQsoNy62DC9AaxiTmZTPiBbtTXjzsS7K5UH5gBiNcUzJbw==",
+  "success": true,
+  "projectFilePath": "/mnt/d/code/fsharp/list-sorting-algorithms/ListSortingAlgorithms/ListSortingAlgorithms.fsproj",
+  "expectedPackageFiles": [
+    "/home/illyalaifu/.nuget/packages/fsharp.core/5.0.0/fsharp.core.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

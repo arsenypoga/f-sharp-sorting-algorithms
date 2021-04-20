@@ -60,7 +60,7 @@ let TestSelectionSort (row) =
 
 [<Test>]
 [<TestCaseSource("dataset")>]
-[ignore("Not Implemented")]
+[<Ignore("Not Implemented")>]
 let TestBubbleSort (row) =
     assertDataSetIsValidForRow row
 

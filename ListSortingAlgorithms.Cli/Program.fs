@@ -28,6 +28,6 @@ let dataset =
 [<EntryPoint>]
 let main argv =
     for item in dataset do
-        printfn "selectionSort:  expected: %A  got: %A" item.expected (selectionSort item.got)
+        printfn "heapSort:  expected: %A  got: %A" item.expected (heapSort item.got)
 
     0

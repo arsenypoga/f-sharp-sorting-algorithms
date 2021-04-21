@@ -80,15 +80,13 @@ type Node =
 
 let rec insertNode node value =
     match node with
-    | Some t ->
-        if value < t.value then
-            { t with
-                  left = Some(insertNode t.left value) }
-        else if value > t.value then
-            { t with
-                  right = Some(insertNode t.right value) }
-        else
-            t
+    | Some t when value < t.value ->
+        { t with
+              left = Some(insertNode t.left value) }
+    | Some t when value > t.value ->
+        { t with
+              right = Some(insertNode t.right value) }
+    | Some t -> t
     | None ->
         { value = value
           left = None

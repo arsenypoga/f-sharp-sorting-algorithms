@@ -52,3 +52,10 @@ let TestSelectionSort (row) =
 [<TestCaseSource("dataset")>]
 let TestHeapSort (row) =
     heapSort row.args |> should equal row.expected
+
+
+[<Test>]
+[<TestCaseSource("dataset")>]
+let TestInsertionSort (row) =
+    insertionSort row.args
+    |> should equal row.expected

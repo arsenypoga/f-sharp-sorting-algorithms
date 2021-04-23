@@ -3,7 +3,7 @@
 // Learn more about F# at http://docs.microsoft.com/dotnet/fsharp
 
 
-//  bubblesort,  heapsort,  insertionsort,  ,  ,  radixsort  and  .
+//  bubblesort, insertionsort, radixsort  and  .
 
 // SelectionSort
 
@@ -108,3 +108,14 @@ let heapSort =
     | [] -> []
     | [ _ ] as list -> list
     | a -> fromHeap (intoHeap a)
+
+let rec insert item list =
+    match list with
+    | [] -> [ item ]
+    | head :: rest when item < head -> item :: head :: rest
+    | head :: rest -> head :: (insert item rest)
+
+let rec insertionSort list =
+    match list with
+    | [] -> []
+    | head :: rest -> insert head (insertionSort rest)
